@@ -2,7 +2,7 @@
 const { query } = require('../client/postgresql');
 
 const getProducts = async() => {
-    // Add your solution here!
+    return await query('SELECT * FROM "products"')
 };
 
 module.exports = {
